@@ -20,6 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(./images/pattern-background-mobile.svg);
     background-size: contain;
@@ -43,7 +44,7 @@ p{
 
 @media screen and (min-width: 376px){
     .main{
-        width: 380px;
+        width: 420px;
     }
 }
 
@@ -54,7 +55,7 @@ p{
 
 @media screen and (min-width: 376px){
     .main__img{
-        width: 380px;
+        width: 420px;
     }
 }
 
@@ -64,6 +65,12 @@ p{
     height: 400px;
 }
 
+@media screen and (min-width: 376px){
+    .main__container{
+        padding: 1.5em 2.5em;
+    }
+}
+
 .main__title{
     margin: 0;
     font-weight: 900;
@@ -71,26 +78,28 @@ p{
 }
 
 .main__text{
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 .block{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     padding: 1em;
     margin: 1em 0;
     border-radius: 0.5em;
     background-color: hsl(225, 100%, 98%);
 }
 
-@media screen and (min-width: 376px){
-    .block{
-        margin: 1em .5em;
-    }
+.block__img{
+    margin-left: 0.5em;
+    margin-right: 1em;
+    width: 15%;
 }
 
-.block_text{
+.block__text{
+    text-align: left;
     color: hsl(224, 23%, 55%);
 }
 
@@ -100,6 +109,7 @@ p{
 }
 
 .block__link{
+    width: 25%;
     font-weight: 700;
 }
 
@@ -118,12 +128,6 @@ p{
     border-radius: 0.5em;
     box-shadow: 0 1em 0.8em hsl(225, 100%, 94%);
     background-color:hsl(245, 75%, 52%);
-}
-
-@media screen and (min-width: 376px){
-    .main__button{
-        margin: 1em .5em;
-    }
 }
 
 .main__button:hover{
