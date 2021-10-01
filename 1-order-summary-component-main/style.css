@@ -131,6 +131,7 @@ p{
 }
 
 .main__button:hover{
+    cursor: pointer;
     background-color: hsl(244, 81%, 68%);
 }
 
