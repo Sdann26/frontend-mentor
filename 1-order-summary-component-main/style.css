@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-.class{
-    color: hsl(225, 100%, 94%);
-    color: hsl(245, 75%, 52%);
-    color: hsl(224, 23%, 55%);
-}
 
 body{    
     margin: 0;
@@ -26,23 +21,30 @@ p{
     justify-content: center;
     align-items: center;
     font-family: 'Red Hat Display', sans-serif;
-    background-image: url(/1-order-summary-component-main/images/pattern-background-desktop.svg);
+    background-image: url(./images/pattern-background-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 376px){
     .background{
-        background-image: url(/1-order-summary-component-main/images/pattern-background-mobile.svg);
+        background-image: url(./images/pattern-background-desktop.svg);
     }
 }
 
 .main{
     width: 330px;
     text-align: center;
-    overflow: hidden;
-   /*  border:  2px solid red; */
+    overflow: hidden;    
+    color: hsl(224, 23%, 55%);
     border-radius: 1em;
+    box-shadow: 0 1.5em 1em hsl(227, 72%, 87%);
+}
+
+@media screen and (min-width: 376px){
+    .main{
+        width: 380px;
+    }
 }
 
 .main__img{
@@ -50,8 +52,14 @@ p{
     width: 330px;
 }
 
+@media screen and (min-width: 376px){
+    .main__img{
+        width: 380px;
+    }
+}
+
 .main__container{
-    background-color: hsl(225, 100%, 98%);
+    background-color: #FFF;
     padding: 1.5em;
     height: 400px;
 }
@@ -64,5 +72,70 @@ p{
 
 .main__text{
     letter-spacing: 1px;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    background-color: hsl(225, 100%, 98%);
+}
+
+@media screen and (min-width: 376px){
+    .block{
+        margin: 1em .5em;
+    }
+}
+
+.block_text{
     color: hsl(224, 23%, 55%);
+}
+
+.block__text--title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.block__link{
+    font-weight: 700;
+}
+
+.block__link:hover{
+    color: hsl(244, 81%, 68%);
+    text-decoration: none;
+}
+
+.main__button{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    font-weight: 700;
+    color: #FFF;
+    border-style: none;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 0.8em hsl(225, 100%, 94%);
+    background-color:hsl(245, 75%, 52%);
+}
+
+@media screen and (min-width: 376px){
+    .main__button{
+        margin: 1em .5em;
+    }
+}
+
+.main__button:hover{
+    background-color: hsl(244, 81%, 68%);
+}
+
+.main__link{
+    line-height: 3em;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+.main__link:hover{
+    color: hsl(244, 81%, 68%);
 }
