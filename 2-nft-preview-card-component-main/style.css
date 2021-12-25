@@ -10,17 +10,22 @@
 }
 
 body{
+    height: 100vh;
     font-family: 'Outfit', sans-serif;
     background-color: var(--main-BG);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 main{
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 hr{
-    margin: 0.5em;
+    margin: 0.5em 0;
     color: var(--line);
 }
 
@@ -38,18 +43,95 @@ a:hover{
     flex-direction: column;
     box-sizing: border-box;
     max-width: 350px;
-    height: 600px;
-    padding: 1.5em;
+    padding: 1.2em;
     margin: 1.5em;
     color: var(--Soft-blue);
     background-color: var(--card-BG);
     border-radius: 1em;
+    box-shadow: 0px 20px 2px 15px rgba(0, 0, 0, 0.1),
+                0px 20px 2px 45px rgba(0, 0, 0, 0.05);
 }
 
-.card__image{
-    border-radius: 1em;
+.card-image{
+    position: relative;
+    z-index: 100;
+    max-width: 306.8px;
+    height: 306.8px;
+    border-radius: 0.5em;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: contain;
 }
 
-.card__image:hover{
+.card-image-effect{
+    position: relative;
+    z-index: 10;
+    max-width: 306.8px;
+    height: 306.8px;
+    border-radius: 0.5em;
+    background-color: transparent;
+}
+
+.card-image-effect:hover{
     background-color: var(--Cyan);
+    opacity: 50%;
+}
+
+.card-image-effect__image:hover{
+    opacity: 1;
+}
+
+.card__title{    
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.card__paragraph{
+    margin: 0;
+    font-weight: 300;
+}
+
+.card-price-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-price-time__img{
+    padding-right: 5px;
+}
+
+.card-price-time-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.card-price-time-left__text{
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.card-price-time-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-footer__img{
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+
+.card-footer__text{
+    margin: 0;
 }
