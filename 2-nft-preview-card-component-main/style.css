@@ -54,7 +54,6 @@ a:hover{
 
 .card-image{
     position: relative;
-    z-index: 100;
     max-width: 306.8px;
     height: 306.8px;
     border-radius: 0.5em;
@@ -63,21 +62,36 @@ a:hover{
 }
 
 .card-image-effect{
-    position: relative;
-    z-index: 10;
-    max-width: 306.8px;
-    height: 306.8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 0.5em;
-    background-color: transparent;
+    background-color: hsla(178, 100%, 50%, 50%);
+    opacity: 0;
+}
+
+.card-image-effect::after{
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    top: 50%;
+    margin-top: -24px;
+    content: url(./images/icon-view.svg);
 }
 
 .card-image-effect:hover{
-    background-color: var(--Cyan);
-    opacity: 50%;
+    animation-name: effect;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
-.card-image-effect__image:hover{
-    opacity: 1;
+@keyframes effect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .card__title{    
