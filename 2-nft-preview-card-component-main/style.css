@@ -48,8 +48,8 @@ a:hover{
     color: var(--Soft-blue);
     background-color: var(--card-BG);
     border-radius: 1em;
-    box-shadow: 0px 20px 2px 15px rgba(0, 0, 0, 0.1),
-                0px 20px 2px 45px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 2px 15px rgba(0, 0, 0, 0.08),
+                0px 20px 2px 45px rgba(0, 0, 0, 0.08);
 }
 
 .card-image{
