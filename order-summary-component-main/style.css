@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(./images/pattern-background-mobile.svg);
@@ -38,8 +38,6 @@ p{
     width: 330px;
     text-align: center;
     overflow: hidden;
-    position: relative;
-    top: 15px;  
     color: hsl(224, 23%, 55%);
     border-radius: 1em;
     box-shadow: 0 1.5em 1em hsl(227, 72%, 87%);
@@ -149,7 +147,8 @@ p{
 }
 
 .attribution{
-    width: 100%;
+    position: relative;
+    top: 20px;
 }
 
 @media screen and (hover:hover) {
