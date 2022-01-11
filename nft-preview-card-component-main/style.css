@@ -22,6 +22,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 hr{
@@ -148,4 +149,11 @@ a:hover{
 
 .card-footer__text{
     margin: 0;
+}
+
+.attribution{
+    width: 100%;
+    color: var(--Soft-blue);
+    font-size: 0.7rem;
+    text-align: center;
 }

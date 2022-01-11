@@ -20,6 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(./images/pattern-background-mobile.svg);
@@ -36,7 +37,9 @@ p{
 .main{
     width: 330px;
     text-align: center;
-    overflow: hidden;    
+    overflow: hidden;
+    position: relative;
+    top: 15px;  
     color: hsl(224, 23%, 55%);
     border-radius: 1em;
     box-shadow: 0 1.5em 1em hsl(227, 72%, 87%);
@@ -143,4 +146,14 @@ p{
 }
 .main__link:hover{
     color: hsl(244, 81%, 68%);
+}
+
+.attribution{
+    width: 100%;
+}
+
+@media screen and (hover:hover) {
+    .attribution a:hover{
+        color: hsl(244, 81%, 68%);
+    }
 }
