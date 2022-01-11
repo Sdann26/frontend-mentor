@@ -1,5 +1,5 @@
 # Frontend Mentor Challanges
-En este repositorio iré subiendo el desarrollo de diferentes proyectos front-end realizados mediante diversas tecnologías propuestos de la página [Frontend Mentor](https://www.frontendmentor.io/home)
+En este repositorio iré subiendo el desarrollo de diferentes proyectos propuestos de la página [Frontend Mentor](https://www.frontendmentor.io/home)
 
 Proyectos:
 

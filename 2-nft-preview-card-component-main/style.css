@@ -1,0 +1,151 @@
+:root{
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-BG);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    margin: 0.5em 0;
+    color: var(--line);
+}
+
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+a:hover{
+    color: var(--Cyan);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 350px;
+    padding: 1.2em;
+    margin: 1.5em;
+    color: var(--Soft-blue);
+    background-color: var(--card-BG);
+    border-radius: 1em;
+    box-shadow: 0px 20px 2px 15px rgba(0, 0, 0, 0.08),
+                0px 20px 2px 45px rgba(0, 0, 0, 0.08);
+}
+
+.card-image{
+    position: relative;
+    max-width: 306.8px;
+    height: 306.8px;
+    border-radius: 0.5em;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: contain;
+}
+
+.card-image-effect{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    background-color: hsla(178, 100%, 50%, 50%);
+    opacity: 0;
+}
+
+.card-image-effect::after{
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    top: 50%;
+    margin-top: -24px;
+    content: url(./images/icon-view.svg);
+}
+
+.card-image-effect:hover{
+    animation-name: effect;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes effect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.card__title{    
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.card__paragraph{
+    margin: 0;
+    font-weight: 300;
+}
+
+.card-price-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-price-time__img{
+    padding-right: 5px;
+}
+
+.card-price-time-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.card-price-time-left__text{
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.card-price-time-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-footer__img{
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+
+.card-footer__text{
+    margin: 0;
+}

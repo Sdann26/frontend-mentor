@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{    
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.background{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 376px){
+    .background{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+}
+
+.main{
+    width: 330px;
+    text-align: center;
+    overflow: hidden;    
+    color: hsl(224, 23%, 55%);
+    border-radius: 1em;
+    box-shadow: 0 1.5em 1em hsl(227, 72%, 87%);
+}
+
+@media screen and (min-width: 376px){
+    .main{
+        width: 420px;
+    }
+}
+
+.main__img{
+    display: block;
+    width: 330px;
+}
+
+@media screen and (min-width: 376px){
+    .main__img{
+        width: 420px;
+    }
+}
+
+.main__container{
+    background-color: #FFF;
+    padding: 1.5em;
+    height: 400px;
+}
+
+@media screen and (min-width: 376px){
+    .main__container{
+        padding: 1.5em 2.5em;
+    }
+}
+
+.main__title{
+    margin: 0;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.main__text{
+    letter-spacing: .5px;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.block__img{
+    margin-left: 0.5em;
+    margin-right: 1em;
+    width: 15%;
+}
+
+.block__text{
+    text-align: left;
+    color: hsl(224, 23%, 55%);
+}
+
+.block__text--title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.block__link{
+    width: 25%;
+    font-weight: 700;
+}
+
+.block__link:hover{
+    color: hsl(244, 81%, 68%);
+    text-decoration: none;
+}
+
+.main__button{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    font-weight: 700;
+    color: #FFF;
+    border-style: none;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 0.8em hsl(225, 100%, 94%);
+    background-color:hsl(245, 75%, 52%);
+}
+
+.main__button:hover{
+    cursor: pointer;
+    background-color: hsl(244, 81%, 68%);
+}
+
+.main__link{
+    line-height: 3em;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+.main__link:hover{
+    color: hsl(244, 81%, 68%);
+}
