@@ -56,10 +56,10 @@ main {
   bottom: 3.2em;
   font-family: var(--typography-primary);
   font-weight: 400;
+  text-decoration: none;
   background-color: var(--Very-light-gray);
   border: 3px solid var(--Very-light-gray);
   border-radius: 2em;
-  cursor: pointer;
 }
 .container__button--orange {
   color: var(--Bright-orange);
