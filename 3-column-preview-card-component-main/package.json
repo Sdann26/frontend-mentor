@@ -1,0 +1,25 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sdann26/frontend-mentor.git"
+  },
+  "author": "Danilo Blas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sdann26/frontend-mentor/issues"
+  },
+  "homepage": "https://github.com/Sdann26/frontend-mentor#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.47.0"
+  }
+}

@@ -1,0 +1,152 @@
+/* Variables */
+ 
+:root{
+    // Primary
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    // Neutral
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); // (paragraphs)
+    --Very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+    /* Typography */
+    --typography-primary: 'Lexend Deca', sans-serif;
+    --typography-title: 'Big Shoulders Display', cursive;
+}
+
+$tablet-breakpoint: 950px;
+
+body{
+    height: 100vh;
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+    font-family: var(--typography-primary);
+}
+
+@mixin hover ($name: $name, $background-color: inherit, $color: inherit){
+    @keyframes #{$name} {
+        100%{
+            background-color: $background-color;
+            color: $color;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em;
+}
+
+.container{
+    box-sizing: border-box;
+    position: relative;
+    width: 310px;
+    height: 500px;
+    padding: 3.2em;
+    &__title{
+        font-family: var(--typography-title);
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--Very-light-gray)
+    }
+    &__paragraph{
+        color: var(--Transparent-white);
+        line-height: 1.6rem;
+    }
+    &__button{
+        padding: 0.8em 2em;
+        position: absolute;
+        bottom: 3.2em;
+        font-family: var(--typography-primary);
+        font-weight: 400;
+        background-color: var(--Very-light-gray);
+        border: 3px solid var(--Very-light-gray);
+        border-radius: 2em;
+        cursor: pointer;
+        &--orange{
+            color: var(--Bright-orange);
+        }
+        &--cyan{
+            color: var(--Dark-cyan);
+        }
+        &--dark-cyan{
+            color: var(--Very-dark-cyan);
+        }
+    }
+    &--orange{
+        background-color: var(--Bright-orange);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    &--cyan{
+        background-color: var(--Dark-cyan);
+    }
+    &--dark-cyan{
+        background-color: var(--Very-dark-cyan);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a {color: hsl(228, 45%, 44%);}
+}
+
+/* Media Queries */
+
+@media screen and (max-width: $tablet-breakpoint) {
+    body{
+        height:unset;
+    }
+
+    .containers{
+        flex-direction: column;
+    }
+
+    .container{
+        padding: 2.5em;
+        &--orange{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+        }
+        &--dark-cyan{
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+
+@media (hover: hover){
+    .container{
+        &__button{
+            &--orange:hover{
+                animation: hoverOrange 0.5s forwards;
+            }
+            &--cyan:hover{
+                animation: hoverCyan 0.5s forwards;
+            }
+            &--dark-cyan:hover{
+                animation: hoverDarkCyan 0.5s forwards;
+            }
+        }
+    }
+}
+
+@include hover(hoverOrange, var(--Bright-orange), var(--Very-light-gray));
+@include hover(hoverCyan, var(--Dark-cyan), var(--Very-light-gray));
+@include hover(hoverDarkCyan, var(--Very-dark-cyan), var(--Very-light-gray));

@@ -1,4 +1,4 @@
-# Frontend Mentor Challanges
+# frontend-mentor
 En este repositorio subiré el desarrollo de diferentes proyectos de la página [Frontend Mentor](https://www.frontendmentor.io/home) usando diversas tecnologías.
 
 [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>](#)
