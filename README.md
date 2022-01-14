@@ -10,4 +10,5 @@ Proyectos:
 
 * [Resumen de Pedido](https://sdann26.github.io/frontend-mentor/order-summary-component-main/)
 * [Tarjeta de Vista Previa para un NFT](https://sdann26.github.io/frontend-mentor/nft-preview-card-component-main/)
+* [Tarjeta de vista Previa de Estadísticas](https://sdann26.github.io/frontend-mentor/stats-preview-card-component-main/)
 * [Tarjeta de vista Previa de 3 Columnas](https://sdann26.github.io/frontend-mentor/3-column-preview-card-component-main/)
