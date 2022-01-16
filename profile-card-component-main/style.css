@@ -19,10 +19,23 @@ body {
 }
 
 main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -32,7 +45,8 @@ main {
   aspect-ratio: 430/460;
   border-radius: 1em;
   background-color: #FFF;
-  box-shadow: 0 2em 2em 0.1px rgba(45, 50, 72, 0.3);
+  -webkit-box-shadow: 0 2em 2em 0.1px rgba(45, 50, 72, 0.3);
+          box-shadow: 0 2em 2em 0.1px rgba(45, 50, 72, 0.3);
   overflow: hidden;
 }
 
@@ -63,7 +77,9 @@ main {
 .card-profile__photo {
   width: 28%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 5px solid #FFF;
 }
@@ -88,10 +104,23 @@ main {
 }
 
 .card-stats {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 24%;
 }
