@@ -21,6 +21,7 @@ const watchTask = ()=>{
         server: "./"
     });
     watch("./style/*.scss", style);
+    watch("./*.js", style);
     watch("./*.html").on("change", browserSync.reload);
 }
 
