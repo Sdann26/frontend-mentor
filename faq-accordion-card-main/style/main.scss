@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* Primary Colors */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    /* Gradient Colors */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+    /* Typography Colors */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+%shadow{
+    box-shadow: 0 1.5em 5em 0.5em hsla(238, 29%, 16%, 0.5);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--Very-dark-grayish-blue);
+    background: var(--Softblue);
+    background: linear-gradient(0deg, var(--Softblue) 0%, var(--Soft-violet) 100%);
+    background-repeat: no-repeat;
+}
+
+.FAQ-accordion{
+    display: flex;
+    width: 60em;
+    aspect-ratio: 32.5/18;
+    padding: 4em;
+    margin: 1em;
+    background-color: #FFF;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: -46em -22.5em;
+    border-radius: 2em;
+    overflow: hidden;
+    @extend %shadow;
+
+    &__picture, &__info{
+        width: 50%;
+    }
+
+    &__picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &--box{            
+            transform: scale(0.88);
+            position: absolute;
+            z-index: 1;
+            right: 19rem;
+            top: 9rem;
+            @extend %shadow;
+        }
+        &--img{
+            transform: scale(0.88);
+            position: relative;
+            right: 7.3em;
+        }
+    }
+    
+    &__title{
+        font-size: 1.6rem;
+        color: var(--Very-dark-desaturated-blue);
+    }
+    &__question{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2em 0;
+        border-bottom: 1px solid var(--Light-grayish-blue);
+        cursor: pointer;
+        /* transition: all 1s; */
+    }
+    &__answer{
+        display: none;
+        padding: 1.2em 0;
+        color: var(--Dark-grayish-blue);
+    }
+
+}
+
+@media (hover:hover) {
+    .FAQ-accordion__question:hover{
+        color: var(--Soft-red);
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    color: #FFF;
+    text-align: center; 
+}
+.attribution a { color: #DDD; }
