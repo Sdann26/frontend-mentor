@@ -41,18 +41,17 @@ main {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   row-gap: 3em;
-  padding: 0em 6.7em;
+  padding: 0em 4em;
   font-weight: 500;
 }
 
 .principal .title {
   padding-right: 4em;
-  margin: 0.3em 0;
   color: var(--Very-Dark-Magenta);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .principal .describe {
-  padding-right: 9em;
+  padding-right: 12em;
   color: var(--Dark-Grayish-Magenta);
   line-height: 1.6rem;
   font-weight: 500;
@@ -133,16 +132,16 @@ main {
 .cards .card, .cards .card--third, .cards .card--second, .cards .card--first {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2em;
-  width: 380px;
+  padding: 2.2em;
+  max-width: 27em;
   background: var(--Very-Dark-Magenta);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .cards .card__img {
   display: block;
   float: left;
   margin-right: 1.8em;
-  width: 3.5em;
+  width: 3.2em;
   border-radius: 50%;
 }
 .cards .card__data {
@@ -163,6 +162,7 @@ main {
 .cards .card__name {
   display: inline;
   color: var(--White);
+  font-weight: 700;
 }
 .cards .card__status {
   display: inline;
@@ -174,6 +174,7 @@ main {
   margin: 0;
   margin-top: 1.8em;
   padding: 0;
+  font-weight: 500;
   line-height: 1.5em;
   color: var(--Light-Grayish-Magenta);
 }
@@ -212,25 +213,25 @@ main {
             flex-direction: column;
   }
   .cards .card, .cards .card--first, .cards .card--second, .cards .card--third {
-    margin: 0.5em;
+    margin: 1em 0;
   }
   .cards .card--first {
     top: 0em;
-    margin-left: 7em;
+    margin-left: 9em;
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
   }
   .cards .card--second {
     top: 0em;
-    margin-right: 7em;
+    margin-right: 9em;
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
   }
   .cards .card--third {
     top: 0em;
-    margin-left: 7em;
+    margin-left: 9em;
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
@@ -266,6 +267,7 @@ main {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 1.5em;
     padding: 0em 2em;
     font-weight: 500;
   }
@@ -291,13 +293,12 @@ main {
             box-sizing: border-box;
   }
   .ratings .stats__rated {
-    margin-top: 1em;
     margin-left: 0em;
   }
 
   .cards .card, .cards .card--first, .cards .card--second, .cards .card--third {
-    max-width: 350px;
-    margin: 0.5em 0;
+    min-width: 20em;
+    height: auto;
   }
   .cards .card--first {
     margin-left: 0em;
@@ -319,8 +320,17 @@ main {
   }
 }
 @media screen and (max-width: 540px) {
+  body {
+    padding: 2em 1.1em;
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  }
+
   main {
     padding: 0;
+  }
+
+  .principal .title {
+    font-size: 2rem;
   }
 
   .ratings .stats, .ratings .stats--first, .ratings .stats--second, .ratings .stats--third {
@@ -330,5 +340,8 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+  .ratings .stats__rated {
+    margin-top: 1em;
   }
 }

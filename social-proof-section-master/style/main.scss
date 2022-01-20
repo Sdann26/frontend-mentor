@@ -28,7 +28,7 @@ main {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     row-gap: 3em;
-    padding: 0em 6.7em;
+    padding: 0em 4em;
     font-weight: 500;
 }
 
@@ -36,12 +36,11 @@ main {
 .principal{
     .title{
         padding-right: 4em;
-        margin: 0.3em 0;
         color: var(--Very-Dark-Magenta);
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .describe{
-        padding-right: 9em;
+        padding-right: 12em;
         color: var(--Dark-Grayish-Magenta);
         line-height: 1.6rem;
         font-weight: 500;
@@ -97,15 +96,15 @@ main {
     grid-column: 1/3;
     .card{
         box-sizing: border-box;
-        padding: 2em;
-        width: 380px;
+        padding: 2.2em;
+        max-width: 27em;
         background: var(--Very-Dark-Magenta);
-        border-radius: 10px;
+        border-radius: 8px;
         &__img{
             display: block;
             float: left;
             margin-right: 1.8em;
-            width: 3.5em;
+            width: 3.2em;
             border-radius: 50%;
         }
         &__data{
@@ -117,6 +116,7 @@ main {
         &__name{
             display: inline;
             color: var(--White);
+            font-weight: 700;
         }
         &__status{
             display: inline;
@@ -127,7 +127,8 @@ main {
             clear: both;
             margin: 0;
             margin-top: 1.8em;
-            padding: 0;
+            padding: 0;            
+            font-weight: 500;
             line-height: 1.5em;
             color: var(--Light-Grayish-Magenta);
         }
@@ -168,20 +169,20 @@ main {
     .cards{
         flex-direction: column;
         .card{
-            margin: 0.5em;
+            margin: 1em 0;
             &--first{
                 top: 0em;
-                margin-left: 7em;
+                margin-left: 9em;
                 align-self:flex-start;
             }
             &--second{
                 top: 0em;
-                margin-right: 7em;
+                margin-right: 9em;
                 align-self:flex-end;  
             }
             &--third{
                 top: 0em;
-                margin-left: 7em;
+                margin-left: 9em;
                 align-self:flex-start;
             }
         }
@@ -218,6 +219,7 @@ main {
     main {
         display: flex;
         flex-direction: column;
+        row-gap: 1.5em;
         padding: 0em 2em;
         font-weight: 500;
     }
@@ -235,15 +237,14 @@ main {
         .stats{
             box-sizing: border-box;
             &__rated{
-                margin-top: 1em;
                 margin-left: 0em;
             }
         }
     }
     .cards{
         .card{
-            max-width: 350px;
-            margin: 0.5em 0;
+            min-width: 20em;
+            height: auto;
             &--first{
                 margin-left: 0em;
                 align-self:center;
@@ -260,14 +261,26 @@ main {
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 540px){   
+    body{
+        padding: 2em 1.1em;
+        background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    }
     main{
         padding: 0;
+    }
+    .principal{
+        .title{
+            font-size: 2rem;
+        }
     }
     .ratings{
         .stats{
             flex-direction: column;
             width: 100%;
+            &__rated{
+                margin-top: 1em;
+            }
         }
     }
 }
