@@ -94,8 +94,8 @@ body{
     }
     
     &__title{
-        margin: 0.2em 0;
-        font-size: 1.6rem;
+        margin: 0.4em 0 0.8em 0;
+        font-size: 1.7rem;
         color: var(--Very-dark-desaturated-blue);
     }
     &__question-answer{
@@ -130,7 +130,8 @@ body{
             }
         }
         p{
-            margin-bottom: 0;            
+            margin-bottom: 0;
+            line-height: 1.2rem;        
         }
     }
     &__question{
@@ -165,7 +166,7 @@ body{
     .FAQ-accordion{
         flex-direction: column;
         width: 330px;
-        min-height: 560px;
+        min-height: 540px;
         aspect-ratio: auto;
         padding: 3em;
         position: relative;
