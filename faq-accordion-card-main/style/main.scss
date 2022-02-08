@@ -99,61 +99,53 @@ body{
         color: var(--Very-dark-desaturated-blue);
     }
     &__question-answer{
-        padding: 1.5em 0;
+        padding: 1.5em 0 1em 0;
         border-bottom: 1px solid var(--Light-grayish-blue);
-        &-img{
-            transform: rotateX(180deg);
+        &[open]{          
+            summary{
+                color: var(--Very-dark-desaturated-blue);
+                font-weight: 700;
+                @media (hover:hover) {
+                    &:hover{
+                        color: var(--Soft-red);
+                    }
+                }
+            }
+            img{
+                transition: all 0.5s;  
+                transform: rotateX(180deg);
+            }
+            &>*:not(summary) {
+                animation: details-show 0.5s ease-in-out;
+            }
+            @keyframes details-show {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        p{
+            margin-bottom: 0;            
         }
     }
-    &__question, &__answer{
-        margin: 0;
-        padding: 0;
-    }
     &__question{
+        padding: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        transition: all 0.2s;
-        &--active{
-            color: var(--Very-dark-desaturated-blue);
-            font-weight: 700;
-        }
         @media (hover:hover) {
             &:hover{
+                transition: all 0.2s;
                 color: var(--Soft-red);
             }
         }
-        &-img{
-            transition: all 0.8s;
-            &--active{
-                transform: rotateX(180deg);
-            }
-        }
     }
-    &__answer{
-        display: none;
-        margin-top: 1em;
-        color: var(--Dark-grayish-blue);
-        &--active{
-            display: inline-block;
-            animation: fadeInDown 0.8s backwards;
-        }
-        &--desactive{
-            display: none;
-        }
-        @keyframes fadeInDown {
-            0% {
-               opacity: 0;
-               transform: translateY(-20px);
-            }
-            100% {
-               opacity: 1;
-               transform: translateY(0);
-            }
-        } 
-    }
-
 }
 
 .attribution { 

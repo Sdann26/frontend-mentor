@@ -17,14 +17,17 @@
   },
   "homepage": "https://github.com/Sdann26/frontend-mentor#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.48.0"
   },
-  "browserslist": [ 
+  "browserslist": [
     "last 2 versions",
     "> 1%",
     "ie >= 8",
