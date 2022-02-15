@@ -10,6 +10,7 @@ En este repositorio subiré el desarrollo de diferentes proyectos de la página 
 
 Proyectos:
 
+* [QR-Code](https://sdann26.github.io/frontend-mentor/qr-code-component-main/)
 * [Tarjeta de Vista Previa para un NFT](https://sdann26.github.io/frontend-mentor/nft-preview-card-component-main/)
 * [Resumen de Pedido](https://sdann26.github.io/frontend-mentor/order-summary-component-main/)
 * [Tarjeta de Vista Previa de Estadísticas](https://sdann26.github.io/frontend-mentor/stats-preview-card-component-main/)

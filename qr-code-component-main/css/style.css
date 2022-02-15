@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.attribution a { color: hsl(228, 45%, 44%); }
