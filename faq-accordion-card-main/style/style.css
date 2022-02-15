@@ -185,6 +185,9 @@ body {
   padding: 1.5em 0 1em 0;
   border-bottom: 1px solid var(--Light-grayish-blue);
 }
+.FAQ-accordion__question-answer summary::after {
+  content: url("../images/icon-arrow-down.svg");
+}
 .FAQ-accordion__question-answer[open] summary {
   color: var(--Very-dark-desaturated-blue);
   font-weight: 700;
@@ -194,7 +197,7 @@ body {
     color: var(--Soft-red);
   }
 }
-.FAQ-accordion__question-answer[open] img {
+.FAQ-accordion__question-answer[open] summary::after {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: rotateX(180deg);

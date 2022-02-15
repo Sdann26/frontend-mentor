@@ -101,6 +101,13 @@ body{
     &__question-answer{
         padding: 1.5em 0 1em 0;
         border-bottom: 1px solid var(--Light-grayish-blue);
+
+        summary{
+            &::after{
+                content: url('../images/icon-arrow-down.svg');
+            }
+        }
+
         &[open]{          
             summary{
                 color: var(--Very-dark-desaturated-blue);
@@ -110,10 +117,10 @@ body{
                         color: var(--Soft-red);
                     }
                 }
-            }
-            img{
-                transition: all 0.5s;  
-                transform: rotateX(180deg);
+                &::after{
+                    transition: all 0.5s;  
+                    transform: rotateX(180deg);
+                }
             }
             &>*:not(summary) {
                 animation: details-show 0.5s ease-in-out;
