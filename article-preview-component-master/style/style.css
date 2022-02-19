@@ -577,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
 }
+.bg-Desaturated-Dark-Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(214 17% 51% / var(--tw-bg-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
