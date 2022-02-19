@@ -13,97 +13,47 @@
   
   <title>Frontend Mentor | Article preview component</title>
 </head>
-<body class="h-screen bg-Light-Grayish-Blue">
-  <main class="h-full flex justify-center items-center">
-    <h1 class="sr-only">Title</h1>
+<body class="flex flex-col justify-center gap-5 h-screen bg-Light-Grayish-Blue">
+  <main class="flex justify-center items-center">
+    <h1 class="sr-only">Article preview component</h1>
     <div class="w-80 md:w-[50em] md:aspect-[26/10] md:flex rounded-lg bg-white overflow-hidden md:overflow-visible">
-      <picture>
-        <img class="object-cover md:object- object-[50%_23%] w-full h-[200px] md:h-full" src="./images/drawers.jpg" aria-hidden="true">
-      </picture>
-      <div class="md:px-3">
+      <img class="object-cover object-[50%_23%] md:object-[8%_50%] max-w-none w-full md:w-auto h-[200px] md:h-full md:rounded-l-lg aspect-square" src="./images/drawers.jpg" aria-hidden="true">
+      <div class="">
         <p class="pt-10 md:pt-8 px-8 text-Very-Dark-Grayish-Blue md:text-2xl font-bold">Shift the overall look and feel by adding these wonderful 
           touches to furniture in your home</p>
         <p class="px-8 text-Desaturated-Dark-Blue text-[13px] md:text-base py-3">Ever been in a room and felt like something was missing? Perhaps 
           it felt slightly bare and uninviting. I’ve got some simple tips 
           to help you make any room feel complete.</p>    
-        <div id="section-share" class="flex relative mt-2 text-[13px] px-8 py-[20px] md:py-0 items-center justify-between">
-          <img class="block w-10 h-10 mr-4 rounded-full" src="./images/avatar-michelle.jpg" alt="user">
-          <div class="flex flex-col w-[calc(100%-84px)] justify-between">
+        <div id="section-share" class="flex relative mt-2 text-[13px] px-8 py-[20px] md:py-0 items-center justify-between md:bg-transparent">
+          <img class="block md:block w-10 h-10 mr-4 rounded-full" src="./images/avatar-michelle.jpg" alt="user">
+          <div class="flex md:flex flex-col w-[calc(100%-84px)] justify-between">
             <p class="text-Very-Dark-Grayish-Blue font-bold">Michelle Appleton</p>
             <p class="text-Grayish-Blue">28 Jun 2020</p>
           </div>
-          <p class="hidden lg:hidden uppercase tracking-[0.3rem] text-Grayish-Blue mr-4">Share</p>
-          <div class="hidden lg:hidden items-center w-[calc(100%-110px)] gap-4">
+          <p class="hidden md:hidden uppercase tracking-[0.3rem] text-Grayish-Blue mr-4">Share</p>
+          <div class="hidden md:hidden items-center w-[calc(100%-110px)] gap-4">
             <a href="#"><img src="./images/icon-facebook.svg" alt="facebook icon"></a>
             <a href="#"><img src="./images/icon-twitter.svg" alt="twitter icon"></a>
             <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
           </div>
-          <button id="bshare" aria-label="Share" class="flex justify-center items-center w-[36px] h-[36px] rounded-full bg-Light-Grayish-Blue">
+          <button id="bshare" aria-label="Share" class="flex justify-center items-center w-9 h-9 rounded-full bg-Light-Grayish-Blue">
             <svg class="relative -top-[1px] -right-[1px]" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
-          <div id="tooltip" class="tooltip hidden md:hidden w-80 h-16 px-8 absolute -right-28 bottom-16 justify-center items-center bg-Very-Dark-Grayish-Blue rounded-lg shadow-lg">
-            <p class="uppercase tracking-[0.3rem] text-Grayish-Blue mr-10">Share</p>
-            <div class="flex items-center gap-6">
-              <a href="#"><img class="w-6 h-6" src="./images/icon-facebook.svg" alt="facebook icon"></a>
-              <a href="#"><img class="w-6 h-6" src="./images/icon-twitter.svg" alt="twitter icon"></a>
-              <a href="#"><img class="w-6 h-6" src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
+          <div id="tooltip" class="tooltip hidden md:hidden w-72 h-16 absolute -right-24 bottom-16 justify-center items-center bg-Very-Dark-Grayish-Blue rounded-lg shadow-lg shadow-Very-Dark-Grayish-Blue/50">
+            <p class="uppercase tracking-[0.3rem] text-Grayish-Blue mr-6">Share</p>
+            <div class="flex items-center gap-5">
+              <a href="#"><img class="w-5 h-5" src="./images/icon-facebook.svg" alt="facebook icon"></a>
+              <a href="#"><img class="w-5 h-5" src="./images/icon-twitter.svg" alt="twitter icon"></a>
+              <a href="#"><img class="w-5 h-5" src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <footer class="attribution text-Very-Dark-Grayish-Blue">
+    Challenge by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Sdann26" target="_blank">Danilo Blas</a>.
   </footer>
-  <script type="text/javascript">
-
-    const sectionShare = document.getElementById("section-share")
-    const tooltip = document.getElementById("tooltip")
-    const [userAvatar, userInfo, textShare, iconsSocial, bShare ] = Array.from(sectionShare.children)
-
-    let openShare = false
-
-    bShare.addEventListener("click", (e)=>{
-
-      windowWidth = window.innerWidth;
-
-      if (windowWidth <= 768){
-        if(openShare===false){
-          userAvatar.classList.replace("block", "hidden")
-          userInfo.classList.replace("flex", "hidden")
-          textShare.classList.replace("hidden", "inline")
-          iconsSocial.classList.replace("hidden", "flex")
-          sectionShare.classList.add("bg-Very-Dark-Grayish-Blue")
-          bShare.classList.replace("bg-Light-Grayish-Blue", "bg-Desaturated-Dark-Blue")
-          bShare.firstElementChild.firstElementChild.setAttribute('fill', '#ECF2F8')
-        }
-        else{
-          userAvatar.classList.replace("hidden", "block")
-          userInfo.classList.replace("hidden", "flex")
-          textShare.classList.replace("inline", "hidden")
-          iconsSocial.classList.replace("flex", "hidden")
-          sectionShare.classList.remove("bg-Very-Dark-Grayish-Blue")
-          bShare.classList.replace("bg-Desaturated-Dark-Blue", "bg-Light-Grayish-Blue")
-          bShare.firstElementChild.firstElementChild.setAttribute('fill', '#6E8098')
-        }
-        openShare = !openShare
-      }
-      else{
-        if(openShare===false){
-          tooltip.classList.replace("md:hidden", "md:flex")
-          bShare.classList.replace("bg-Light-Grayish-Blue", "bg-Desaturated-Dark-Blue")
-          bShare.firstElementChild.firstElementChild.setAttribute('fill', '#ECF2F8')
-        }
-        else{
-          tooltip.classList.replace("md:flex", "md:hidden")
-          bShare.classList.replace("bg-Desaturated-Dark-Blue", "bg-Light-Grayish-Blue")
-          bShare.firstElementChild.firstElementChild.setAttribute('fill', '#6E8098')
-        }
-        openShare = !openShare
-      }
-    })
-  </script>
 </body>
 </html>
