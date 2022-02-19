@@ -19,3 +19,4 @@ Proyectos:
 * [Tarjeta de Perfil](https://sdann26.github.io/frontend-mentor/profile-card-component-main/)
 * [Tarjeta tipo Accordion FAQ](https://sdann26.github.io/frontend-mentor/faq-accordion-card-main/)
 * [Sección Social Proof](https://sdann26.github.io/frontend-mentor/social-proof-section-master/)
+* [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
