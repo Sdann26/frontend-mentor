@@ -456,17 +456,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-right-\[1px\] {
   right: -1px;
 }
+.-top-\[1px\] {
+  top: -1px;
+}
 .mr-4 {
   margin-right: 1rem;
 }
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .block {
   display: block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
@@ -510,6 +522,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[14px\] {
   height: 14px;
 }
+.h-\[28px\] {
+  height: 28px;
+}
+.h-\[30px\] {
+  height: 30px;
+}
 .w-80 {
   width: 20rem;
 }
@@ -543,6 +561,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[calc\(100\%-84px\)\] {
   width: calc(100% - 84px);
 }
+.w-\[28px\] {
+  width: 28px;
+}
+.w-\[30px\] {
+  width: 30px;
+}
+.w-\[calc\(100\%-110px\)\] {
+  width: calc(100% - 110px);
+}
 .flex-col {
   flex-direction: column;
 }
@@ -554,6 +581,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -575,6 +608,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-Desaturated-Dark-Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(214 17% 51% / var(--tw-bg-opacity));
+}
+.bg-Very-Dark-Grayish-Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 19% 35% / var(--tw-bg-opacity));
+}
+.bg-Grayish-Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(212 23% 69% / var(--tw-bg-opacity));
+}
+.fill-blue-500 {
+  fill: #3b82f6;
 }
 .object-contain {
   -o-object-fit: contain;
@@ -690,14 +738,56 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-\[px14\] {
+  padding-top: px14;
+  padding-bottom: px14;
+}
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .pr-4 {
   padding-right: 1rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .text-\[13px\] {
   font-size: 13px;
 }
 .font-bold {
   font-weight: 700;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+.tracking-\[0\.3rem\] {
+  letter-spacing: 0.3rem;
 }
 .text-Very-Dark-Grayish-Blue {
   --tw-text-opacity: 1;
@@ -710,6 +800,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-Light-Grayish-Blue {
   --tw-text-opacity: 1;
   color: hsl(210 46% 95% / var(--tw-text-opacity));
+}
+.text-Grayish-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(212 23% 69% / var(--tw-text-opacity));
+}
+.opacity-60 {
+  opacity: 0.6;
 }
 
 html{

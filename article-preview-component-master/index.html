@@ -20,20 +20,26 @@
       <picture>
         <img class="object-cover object-[50%_23%] w-full h-[200px]" src="./images/drawers.jpg" aria-hidden="true">
       </picture>
-      <div class="p-8">
-        <p class="text-Very-Dark-Grayish-Blue font-bold">Shift the overall look and feel by adding these wonderful 
+      <div class="">
+        <p class="pt-10 px-8 text-Very-Dark-Grayish-Blue font-bold">Shift the overall look and feel by adding these wonderful 
           touches to furniture in your home</p>
-        <p class="text-Desaturated-Dark-Blue text-[13px] py-3">Ever been in a room and felt like something was missing? Perhaps 
+        <p class="px-8 text-Desaturated-Dark-Blue text-[13px] py-3">Ever been in a room and felt like something was missing? Perhaps 
           it felt slightly bare and uninviting. I’ve got some simple tips 
           to help you make any room feel complete.</p>    
-        <div class="flex mt-4 text-[13px] items-center justify-between">
-          <img class="w-10 h-10 mr-4 rounded-full" src="./images/avatar-michelle.jpg" alt="user">
+        <div id="section-share" class="flex mt-2 text-[13px] px-8 py-[20px] items-center justify-between">
+          <img class="block w-10 h-10 mr-4 rounded-full" src="./images/avatar-michelle.jpg" alt="user">
           <div class="flex flex-col w-[calc(100%-84px)] justify-between">
             <p class="text-Very-Dark-Grayish-Blue font-bold">Michelle Appleton</p>
-            <p class="text-Desaturated-Dark-Blue">28 Jun 2020</p>
+            <p class="text-Grayish-Blue">28 Jun 2020</p>
           </div>
-          <button class="flex justify-center items-center w-8 h-8 rounded-full bg-Light-Grayish-Blue">
-            <img class="relative -top-[2px] -right-[1px] " object-fill" src="./images/icon-share.svg">
+          <p class="hidden uppercase tracking-[0.3rem] text-Grayish-Blue mr-4">Share</p>
+          <div class="hidden items-center w-[calc(100%-110px)] gap-4">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="facebook icon"></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="twitter icon"></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest icon"></a>
+          </div>
+          <button id="bshare" aria-label="Share" class="flex justify-center items-center w-[30px] h-[30px] rounded-full bg-Light-Grayish-Blue">
+            <svg class="relative -top-[1px] -right-[1px]" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
         </div>
       </div>
@@ -43,5 +49,34 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+  <script type="text/javascript">
+    const sectionShare = document.getElementById("section-share")
+    const [userAvatar, userInfo, textShare, iconsSocial, bShare ] = Array.from(sectionShare.children)
+
+    let openShare = false
+    bShare.addEventListener("click", (e)=>{
+      if(openShare===false){
+        userAvatar.classList.replace("block", "hidden")
+        userInfo.classList.replace("flex", "hidden")
+        textShare.classList.replace("hidden", "inline")
+        iconsSocial.classList.replace("hidden", "flex")
+        sectionShare.classList.add("bg-Very-Dark-Grayish-Blue")
+        bShare.classList.replace("bg-Light-Grayish-Blue", "bg-Desaturated-Dark-Blue")
+        bShare.firstElementChild.firstElementChild.setAttribute('fill', '#ECF2F8')
+
+      }
+      else{
+        userAvatar.classList.replace("hidden", "block")
+        userInfo.classList.replace("hidden", "flex")
+        textShare.classList.replace("inline", "hidden")
+        iconsSocial.classList.replace("flex", "hidden")
+        sectionShare.classList.remove("bg-Very-Dark-Grayish-Blue")
+        bShare.classList.replace("bg-Desaturated-Dark-Blue", "bg-Light-Grayish-Blue")
+        bShare.firstElementChild.firstElementChild.setAttribute('fill', '#6E8098')
+
+      }
+      openShare = !openShare
+    })
+  </script>
 </body>
 </html>
