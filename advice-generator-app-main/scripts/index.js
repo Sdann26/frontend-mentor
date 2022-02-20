@@ -16,7 +16,10 @@ var generatedSentence = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return fetch('https://api.adviceslip.com/advice').then(function (response) {
+            return fetch('https://api.adviceslip.com/advice', {
+              method: 'GET',
+              cache: 'no-cache'
+            }).then(function (response) {
               return response.json();
             }).then(function (data) {
               return data.slip;

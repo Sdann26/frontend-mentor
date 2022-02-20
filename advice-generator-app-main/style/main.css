@@ -4,11 +4,16 @@
   --Neon-Green: hsl(150, 100%, 66%);
   --Grayish-Blue: hsl(217, 19%, 38%);
   --Dark-Grayish-Blue: hsl(217, 19%, 24%);
-  --text-size-quote: 28px;
+  --text-size-quote: 1.75rem;
   --font-family-Manrope: 'Manrope', sans-serif;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
   background-color: var(--bg-color);
   font-family: var(--font-family-Manrope);
 }
@@ -17,7 +22,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center; 
-  height: 100vh;
 }
 
 .advice{
@@ -25,8 +29,9 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33em;
-  padding: 2.5em 3em 0 2.5em;
+  width: 34em;
+  padding: 3em 2.5em 0 2.5em;
+  margin: 3em 0;
   background-color: var(--Dark-Grayish-Blue);
   border-radius: 0.75rem;
 }
@@ -66,8 +71,50 @@ main{
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--Grayish-Blue);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--text-quote-color);
+}
+
+@media (hover: hover){
+  .attribution a:hover {
+    color: var(--Neon-Green);
+  }  
+}
+
+@media screen and (max-width: 768px) {
+
+  html{
+    font-size: 10px;
+  }
+
+  .advice{
+    width: 28em;
+    padding: 2em 2em 0 2em;
+    margin-bottom: 4em;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 0.75rem;
+  }
+
+  .advice__quote{
+    width: 13em
+  }
+
+  .advice__button{
+    width: 4em;
+  }
+
+  .advice__button:hover{
+    box-shadow: none;
+  }
+
+  .advice__button:active{
+    box-shadow: 0em 0 1.5em 1.5em hsla(150, 100%, 66%, .3);
+  }
+
+  .attribution a:active {
+    color: var(--Neon-Green);
+  }
 }
