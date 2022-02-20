@@ -24,6 +24,15 @@ main{
   align-items: center; 
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 .advice{
   box-sizing: border-box;
   display: flex;
