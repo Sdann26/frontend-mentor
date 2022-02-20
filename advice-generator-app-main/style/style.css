@@ -42,6 +42,7 @@ main{
 
 .advice__quote{
   margin: 1.1em 0;
+  text-align: center;
   font-size: var(--text-size-quote);
   color: var(--text-quote-color);
 }
