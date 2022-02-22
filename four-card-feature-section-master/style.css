@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    padding: 2em 1.2em;
+    padding: 5em 1.2em;
     background-color: var(--Very-Light-Gray);
 }
 
@@ -42,6 +42,12 @@ p{
 main > p:first-of-type{
     padding: 0 .5em;
     text-align: center;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .card-group{
@@ -94,5 +100,76 @@ main > p:first-of-type{
     align-self: flex-end;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    margin-top: 5em;
+    font-size: 10px; 
+    text-align: center;
+    color: var(--title-subtitles);
+}
+
+.attribution a { 
+    transition: all 0.5s;
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:active{
+    color: hsl(229, 6%, 66%);
+}
+
+@media screen and (min-width:42em) {
+    body{
+        padding-top: 3em;
+        padding-bottom: 0;
+    }
+    .card-group{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .attribution { 
+        margin: 2em 0;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:64em) {
+    h1, h2{
+        font-size: 2.4rem;
+    }
+
+    main > p:first-of-type{
+        margin: 0 auto;
+        margin-top: 2em;
+        width: 35em;
+    }
+
+    .card-group{
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+    .card--cyan{
+        margin: auto;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+    
+    .card--blue{
+        margin: auto;
+        grid-row: 1 / 3;
+        grid-column: 3 / 4;
+    }
+
+    .card--orange, .card--red{
+        margin: 0;
+    }
+
+    .card__logo{
+        width: 80px;
+    }
+}
+
+@media (hover:hover){
+    .attribution a:hover { 
+        color: hsl(229, 6%, 66%); 
+    }
+}
