@@ -1,0 +1,12 @@
+{
+  "name": "four-card-feature-section-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Israel Danilo Blas Salas",
+  "license": "ISC"
+}
