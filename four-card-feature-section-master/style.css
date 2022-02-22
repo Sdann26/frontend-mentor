@@ -1,6 +1,98 @@
 :root{
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
+    --card-Red: hsl(0, 78%, 62%);
+    --card-Cyan: hsl(180, 62%, 55%);
+    --card-Orange: hsl(34, 97%, 64%);
+    --card-Blue: hsl(212, 86%, 64%);
+    --title-subtitles: hsl(234, 12%, 34%);
+    --paragraph: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
 }
+
+html{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 2em 1.2em;
+    background-color: var(--Very-Light-Gray);
+}
+
+h1, h2{
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h1{
+    color: var(--title-subtitles);
+    font-weight: 600;
+}
+
+h2{
+    color: var(--title-subtitles);
+    font-weight: 200;
+}
+
+p{
+    color: var(--paragraph);
+}
+
+main > p:first-of-type{
+    padding: 0 .5em;
+    text-align: center;
+}
+
+.card-group{
+    display: grid;
+    padding-top: 4em;
+    gap: 1em;
+}
+
+.card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.8em;
+    margin: .5em;
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 10px 2px hsla(228, 45%, 44%, .2);
+}
+
+.card__title{
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.card--cyan{
+    border-top: 4px solid var(--card-Cyan);
+}
+
+.card--red{
+    border-top: 4px solid var(--card-Red);
+}
+
+.card--orange{
+    border-top: 4px solid var(--card-Orange);
+}
+
+.card--blue{
+    border-top: 4px solid var(--card-Blue);
+}
+
+.card__text{
+    margin: .5em 0;
+    font-size: 13px;
+}
+
+.card__logo{
+    margin-top: 2em;
+    width: 50px;
+    align-self: flex-end;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
