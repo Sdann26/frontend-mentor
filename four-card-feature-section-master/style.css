@@ -25,7 +25,7 @@ h1, h2{
     font-size: 1.6rem;
 }
 
-h1{
+h1, h3{
     color: var(--title-subtitles);
     font-weight: 600;
 }
@@ -33,6 +33,10 @@ h1{
 h2{
     color: var(--title-subtitles);
     font-weight: 200;
+}
+
+h3{
+    margin: 0;
 }
 
 p{
@@ -118,11 +122,12 @@ main > p:first-of-type{
 
 @media screen and (min-width:42em) {
     body{
-        padding-top: 3em;
+        padding-top: 4em;
         padding-bottom: 0;
     }
     .card-group{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(300px, 350px));
+        grid-template-rows: repeat(2, 1fr);
     }
     .attribution { 
         margin: 2em 0;
@@ -142,8 +147,7 @@ main > p:first-of-type{
     }
 
     .card-group{
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, minmax(300px, 350px));
         gap: 2em;
     }
 
@@ -164,7 +168,7 @@ main > p:first-of-type{
     }
 
     .card__logo{
-        width: 80px;
+        width: 76px;
     }
 }
 
