@@ -19,7 +19,7 @@ body{
     background-color: var(--Very-Light-Gray);
 }
 
-h1, h2{
+h1, em{
     margin: 0;
     text-align: center;
     font-size: 1.6rem;
@@ -30,9 +30,12 @@ h1, h3{
     font-weight: 600;
 }
 
-h2{
-    color: var(--title-subtitles);
+em{
+    display: inline-block;
+    width: 100%;
+    font-style: normal;
     font-weight: 200;
+    color: var(--title-subtitles);
 }
 
 h3{
@@ -46,6 +49,15 @@ p{
 main > p:first-of-type{
     padding: 0 .5em;
     text-align: center;
+}
+
+.sr-only {
+    position:absolute ;
+    left: -10000px;
+    width: 1px;
+    height:px ;
+    top: auto;
+    overflow: hidden;
 }
 
 .features{
