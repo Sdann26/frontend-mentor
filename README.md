@@ -20,5 +20,6 @@ Proyectos:
 * [Tarjeta tipo Accordion FAQ](https://sdann26.github.io/frontend-mentor/faq-accordion-card-main/)
 * [Sección Social Proof](https://sdann26.github.io/frontend-mentor/social-proof-section-master/)
 * [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
-* [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
 * [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
+* [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
+* [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
