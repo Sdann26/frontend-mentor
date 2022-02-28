@@ -29,7 +29,7 @@ main {
   position:absolute ;
   left: -10000px;
   width: 1px;
-  height: 1px ;
+  height: 1px;
   top: auto;
   overflow: hidden;
 }

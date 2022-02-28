@@ -55,7 +55,7 @@ main > p:first-of-type{
     position:absolute ;
     left: -10000px;
     width: 1px;
-    height:px ;
+    height: 1px;
     top: auto;
     overflow: hidden;
 }
