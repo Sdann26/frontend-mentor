@@ -25,6 +25,15 @@ main {
   height: 100%;
 }
 
+.sr-only {
+  position:absolute ;
+  left: -10000px;
+  width: 1px;
+  height:px ;
+  top: auto;
+  overflow: hidden;
+}
+
 .containers {
   display: flex;
   flex-direction: row;
