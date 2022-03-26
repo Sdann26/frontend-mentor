@@ -1,4 +1,5 @@
 # frontend-mentor
+
 En el presente repositorio desarrollo diversos retos propuesto de la página [Frontend Mentor](https://www.frontendmentor.io/home) usando diferentes tecnologías Frontend.
 
 [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>](#)
@@ -11,15 +12,16 @@ En el presente repositorio desarrollo diversos retos propuesto de la página [Fr
 
 Proyectos:
 
-* [QR-Code](https://sdann26.github.io/frontend-mentor/qr-code-component-main/)
-* [Tarjeta de Vista Previa para un NFT](https://sdann26.github.io/frontend-mentor/nft-preview-card-component-main/)
-* [Resumen de Pedido](https://sdann26.github.io/frontend-mentor/order-summary-component-main/)
-* [Tarjeta de Vista Previa de Estadísticas](https://sdann26.github.io/frontend-mentor/stats-preview-card-component-main/)
-* [Tarjeta de Vista Previa de 3 Columnas](https://sdann26.github.io/frontend-mentor/3-column-preview-card-component-main/)
-* [Tarjeta de Perfil](https://sdann26.github.io/frontend-mentor/profile-card-component-main/)
-* [Tarjeta tipo Accordion FAQ](https://sdann26.github.io/frontend-mentor/faq-accordion-card-main/)
-* [Sección Social Proof](https://sdann26.github.io/frontend-mentor/social-proof-section-master/)
-* [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
-* [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
-* [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
-* [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
+- [Rating Interactivo](https://sdann26.github.io/frontend-mentor/interactive-rating-component-main)
+- [QR-Code](https://sdann26.github.io/frontend-mentor/qr-code-component-main/)
+- [Tarjeta de Vista Previa para un NFT](https://sdann26.github.io/frontend-mentor/nft-preview-card-component-main/)
+- [Resumen de Pedido](https://sdann26.github.io/frontend-mentor/order-summary-component-main/)
+- [Tarjeta de Vista Previa de Estadísticas](https://sdann26.github.io/frontend-mentor/stats-preview-card-component-main/)
+- [Tarjeta de Vista Previa de 3 Columnas](https://sdann26.github.io/frontend-mentor/3-column-preview-card-component-main/)
+- [Tarjeta de Perfil](https://sdann26.github.io/frontend-mentor/profile-card-component-main/)
+- [Tarjeta tipo Accordion FAQ](https://sdann26.github.io/frontend-mentor/faq-accordion-card-main/)
+- [Sección Social Proof](https://sdann26.github.io/frontend-mentor/social-proof-section-master/)
+- [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
+- [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
+- [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
+- [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
