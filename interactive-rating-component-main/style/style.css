@@ -5,6 +5,7 @@
   --select-state: hsl(217, 12%, 63%);
   --bg-card: hsl(213, 20%, 18%);
   --bg-color: hsl(216, 12%, 8%);
+  --bg-secondary: hsla(216, 12%, 54%, 0.1);
 }
 
 html {
@@ -28,9 +29,21 @@ main {
   align-items: center;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+/* Fist state */
+
 .raiting-card {
   box-sizing: content-box;
   width: 20em;
+  height: 21.5em;
   padding: 1.5em;
   font-weight: 400;
   background-color: var(--bg-card);
@@ -46,7 +59,7 @@ main {
   display: block;
   padding: 0.75em;
   width: 1em;
-  background-color: hsla(216, 12%, 54%, 0.1);
+  background-color: var(--bg-secondary);
   border-radius: 50%;
 }
 
@@ -72,7 +85,7 @@ main {
   aspect-ratio: 1;
   color: var(--primary-color);
   font-weight: 700;
-  background-color: hsla(216, 12%, 54%, 0.1);
+  background-color: var(--bg-secondary);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -135,9 +148,10 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 30em) {
   .raiting-card {
     width: 22em;
+    height: 21em;
     padding: 2em;
   }
 
@@ -159,5 +173,44 @@ main {
   .raiting-card__submit {
     margin-bottom: 0;
     padding: 0.75em 0;
+  }
+}
+
+/* Second state */
+
+.raiting-card--ty {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.raiting-card__answer {
+  padding: 0.5em 1em;
+  margin: 1em;
+  color: var(--secundary-color);
+  font-style: normal;
+  background-color: var(--bg-secondary);
+  border-radius: 1em;
+}
+
+.raiting-card__thanks {
+  display: block;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.raiting-card__description--ty {
+  margin: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .raiting-card--ty {
+    width: 22.5em;
+    height: 21em;
+    padding: 2em 1.75em;
   }
 }

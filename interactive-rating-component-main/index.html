@@ -23,13 +23,13 @@
 
   <body>
     <main>
-      <!-- Rating state start -->
-
+      <h1 class="sr-only">Interactive Raiting Component</h1>
       <div class="raiting-card">
         <img
           class="raiting-card__start"
           src="./images/icon-star.svg"
           aria-hidden="true"
+          alt=""
         />
         <strong class="raiting-card__question">How did we do?</strong>
         <p class="raiting-card__description">
@@ -45,17 +45,21 @@
         </div>
         <button class="raiting-card__submit" id="submit">Submit</button>
       </div>
-
-      <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-
-      <!-- You selected -->
-      <!-- Add rating here -->
-      <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch! -->
-
-      <!-- Thank you state end -->
+      <div class="raiting-card raiting-card--ty">
+        <img
+          src="./images/illustration-thank-you.svg"
+          aria-hidden="true"
+          alt=""
+        />
+        <em class="raiting-card__answer">
+          You selected <span id="answer"></span> out of 5
+        </em>
+        <strong class="raiting-card__thanks">Thank you!</strong>
+        <p class="raiting-card__description raiting-card__description--ty">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by
