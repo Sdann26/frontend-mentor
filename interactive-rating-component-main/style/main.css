@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1em;
   min-height: 100vh;
 }
 
@@ -28,16 +29,15 @@ main {
 }
 
 .raiting-card {
-  box-sizing: border-box;
-  width: 22em;
+  box-sizing: content-box;
+  width: 20em;
   padding: 1.5em;
-  aspect-ratio: 1;
   font-weight: 400;
   background-color: var(--bg-card);
   background: radial-gradient(
     circle at 50% 0%,
-    hsla(213, 20%, 23%) 0%,
-    hsl(213, 20%, 18%) 100%
+    hsla(213, 20%, 18%) 0%,
+    hsl(213, 32%, 10%) 100%
   );
   border-radius: 1em;
 }
@@ -55,7 +55,7 @@ main {
   margin: 1em 0;
   color: var(--white);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .raiting-card-buttons {
@@ -67,7 +67,7 @@ main {
 
 .raiting-card-buttons__button {
   box-sizing: content-box;
-  width: 2.75em;
+  width: 2.8em;
   padding: 0;
   aspect-ratio: 1;
   color: var(--primary-color);
@@ -100,10 +100,10 @@ main {
   font-weight: 700;
   width: 100%;
   padding: 1em;
-  margin: 0.5em 0;
+  margin-bottom: 0.75em;
   background-color: var(--secundary-color);
   border: none;
-  border-radius: 2em;
+  border-radius: 1.5em;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -133,4 +133,31 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 450px) {
+  .raiting-card {
+    width: 22em;
+    padding: 2em;
+  }
+
+  .raiting-card__start {
+    padding: 1em;
+    width: 1em;
+  }
+
+  .raiting-card__question {
+    margin: 1em 0 0.5em 0;
+    font-size: 1.85rem;
+  }
+
+  .raiting-card-buttons__button {
+    width: 3.1em;
+    border-radius: 50%;
+  }
+
+  .raiting-card__submit {
+    margin-bottom: 0;
+    padding: 0.75em 0;
+  }
 }
