@@ -16,17 +16,37 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1em;
   min-height: 100vh;
 }
 
 main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sr-only {
@@ -47,6 +67,12 @@ main {
   padding: 1.5em;
   font-weight: 400;
   background-color: var(--bg-card);
+  background: -webkit-radial-gradient(
+    50% 0%,
+    circle,
+    hsla(213, 20%, 18%) 0%,
+    hsl(213, 32%, 10%) 100%
+  );
   background: radial-gradient(
     circle at 50% 0%,
     hsla(213, 20%, 18%) 0%,
@@ -72,9 +98,19 @@ main {
 }
 
 .raiting-card-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1.8em 0;
 }
 
@@ -89,7 +125,13 @@ main {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.raiting-card-buttons__button--select {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 @media (hover: hover) {
@@ -118,12 +160,8 @@ main {
   border: none;
   border-radius: 1.5em;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.raiting-card__submit--select {
-  background-color: var(--white);
-  color: var(--secundary-color);
 }
 
 @media (hover: hover) {
@@ -179,10 +217,23 @@ main {
 /* Second state */
 
 .raiting-card--ty {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   gap: 1em;
 }
@@ -213,4 +264,8 @@ main {
     height: 21em;
     padding: 2em 1.75em;
   }
+}
+
+.raiting-card--hidden {
+  display: none;
 }

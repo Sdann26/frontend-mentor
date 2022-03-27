@@ -17,14 +17,14 @@
     />
     <link rel="stylesheet" href="./style/normalizer.css" />
     <link rel="stylesheet" href="./style/style.css" />
-
+    <script src="./scripts/index.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
 
   <body>
     <main>
       <h1 class="sr-only">Interactive Raiting Component</h1>
-      <div class="raiting-card">
+      <div id="first-step-card" class="raiting-card">
         <img
           class="raiting-card__start"
           src="./images/icon-star.svg"
@@ -36,16 +36,33 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="raiting-card-buttons">
-          <button class="raiting-card-buttons__button">1</button
-          ><button class="raiting-card-buttons__button">2</button
-          ><button class="raiting-card-buttons__button">3</button
-          ><button class="raiting-card-buttons__button">4</button
-          ><button class="raiting-card-buttons__button">5</button>
-        </div>
-        <button class="raiting-card__submit" id="submit">Submit</button>
+        <form id="form">
+          <div id="buttons" class="raiting-card-buttons">
+            <button type="button" class="raiting-card-buttons__button">
+              1
+            </button>
+            <button type="button" class="raiting-card-buttons__button">
+              2
+            </button>
+            <button type="button" class="raiting-card-buttons__button">
+              3
+            </button>
+            <button type="button" class="raiting-card-buttons__button">
+              4
+            </button>
+            <button type="button" class="raiting-card-buttons__button">
+              5
+            </button>
+          </div>
+          <button id="submit" type="submit" class="raiting-card__submit">
+            Submit
+          </button>
+        </form>
       </div>
-      <div class="raiting-card raiting-card--ty">
+      <div
+        id="second-step-card"
+        class="raiting-card raiting-card--ty raiting-card--hidden"
+      >
         <img
           src="./images/illustration-thank-you.svg"
           aria-hidden="true"

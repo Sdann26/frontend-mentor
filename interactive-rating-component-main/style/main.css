@@ -92,6 +92,11 @@ main {
   transition: all 0.3s;
 }
 
+.raiting-card-buttons__button--select {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
 @media (hover: hover) {
   .raiting-card-buttons__button:hover {
     background-color: var(--secundary-color);
@@ -119,11 +124,6 @@ main {
   border-radius: 1.5em;
   cursor: pointer;
   transition: all 0.3s;
-}
-
-.raiting-card__submit--select {
-  background-color: var(--white);
-  color: var(--secundary-color);
 }
 
 @media (hover: hover) {
@@ -179,7 +179,7 @@ main {
 /* Second state */
 
 .raiting-card--ty {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -213,4 +213,8 @@ main {
     height: 21em;
     padding: 2em 1.75em;
   }
+}
+
+.raiting-card--hidden {
+  display: none;
 }
