@@ -183,6 +183,7 @@ main {
     width: 22em;
     height: 21em;
     padding: 2em;
+    border-radius: 1.8em;
   }
 
   .raiting-card__start {
