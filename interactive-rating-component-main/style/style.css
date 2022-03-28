@@ -178,14 +178,6 @@ main {
   }
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 @media screen and (min-width: 30em) {
   .raiting-card {
     width: 22em;
@@ -268,4 +260,27 @@ main {
 
 .raiting-card--hidden {
   display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (hover: hover) {
+  .attribution a:hover {
+    color: var(--secundary-color);
+  }
+}
+
+@media (hover: none) {
+  .attribution a:active {
+    color: var(--secundary-color);
+  }
 }
