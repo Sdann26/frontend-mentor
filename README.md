@@ -10,7 +10,9 @@ En el presente repositorio desarrollo diversos retos propuesto de la página [Fr
 [<img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/>](#)
 [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/>](#)
 
-Proyectos:
+## Proyectos:
+
+1. Nivel Beginner:
 
 - [Rating Interactivo](https://sdann26.github.io/frontend-mentor/interactive-rating-component-main)
 - [QR-Code](https://sdann26.github.io/frontend-mentor/qr-code-component-main/)
@@ -24,4 +26,8 @@ Proyectos:
 - [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
 - [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
 - [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
+
+2. Nivel Junior:
+
 - [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
+- [Sección de Testimonios en Grid](https://sdann26.github.io/frontend-mentor/testimonials-grid-section-main)
