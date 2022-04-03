@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  padding: 2em;
+  padding: 6em 2em;
   background-color: var(--Light-grayish-blue);
 }
 
@@ -26,9 +26,18 @@ blockquote {
   margin: 0;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: px;
+  top: auto;
+  overflow: hidden;
+}
+
 .testimonials-cards {
   display: grid;
-  grid-auto-columns: 25.6em;
+  grid-auto-columns: 25.4em;
   gap: 2em;
 }
 
@@ -36,7 +45,7 @@ blockquote {
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.2em;
   position: relative;
   border-radius: 1em;
   z-index: 1;
@@ -64,6 +73,35 @@ blockquote {
   background-color: var(--White);
 }
 
+.card-header__img {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 2.5em;
+  margin-right: 1.25em;
+  border: 2.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.card-header__img--boder-none {
+  border: none;
+}
+
+.card-header__img--boder-violet {
+  border: 2.5px solid rgba(117, 65, 200, 0.7);
+}
+
+.card-header__author {
+  display: block;
+  margin: 0.1em 0;
+}
+
+.card-header__verified {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
 .card__quote-img {
   position: absolute;
   top: 0;
@@ -72,7 +110,7 @@ blockquote {
 }
 
 .card__text-description {
-  font-size: 1.5rem;
+  font-size: 1.542rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
 }
@@ -82,8 +120,9 @@ blockquote {
 }
 
 .card__text-quote {
+  line-height: 1.5rem;
   font-weight: 500;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .card__text-quote--gray {
@@ -97,4 +136,43 @@ blockquote {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 760px) {
+  .testimonials-cards {
+    display: block;
+    columns: 25.4em 2;
+  }
+
+  .card {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1228px) {
+  .testimonials-cards {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(4, 20em);
+    grid-template-rows: 22em 20.5em;
+    row-gap: 2.5em;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .card--first {
+    grid-column: span 2;
+  }
+  .card--fourth {
+    grid-column: span 2;
+  }
+
+  .card--fiveth {
+    grid-row: span 2;
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+  }
 }

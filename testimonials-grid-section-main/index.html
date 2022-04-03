@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalizer.css" />
@@ -22,16 +22,21 @@
   </head>
   <body>
     <main class="testimonials-cards">
-      <div class="card card--violet">
+      <h1 class="sr-only">Testimonials Grid Section</h1>
+      <div class="card card--violet card--first">
         <img
           class="card__quote-img"
           src="./images/bg-pattern-quotation.svg"
           alt=""
           aria-hidden="true"
         />
-        <div>
-          <img src="./images/image-daniel.jpg" /><span>Daniel Clifford</span>
-          <span>Verified Graduate</span>
+        <div class="card-header">
+          <img
+            class="card-header__img"
+            src="./images/image-daniel.jpg"
+            alt="Daniel's Photo"
+          /><span class="card-header__author">Daniel Clifford</span>
+          <span class="card-header__verified">Verified Graduate</span>
         </div>
         <p class="card__text-description">
           I received a job offer mid-course, and the subjects I learned were
@@ -48,12 +53,14 @@
           a Software Engineer at a VR startup. ”
         </blockquote>
       </div>
-      <div class="card card--grayish-blue">
-        <div>
-          <img src="./images/image-jonathan.jpg" /><span>
-            Jonathan Walters</span
-          >
-          <span>Verified Graduate</span>
+      <div class="card card--grayish-blue card--second">
+        <div class="card-header">
+          <img
+            class="card-header__img card-header__img--boder-none"
+            src="./images/image-jonathan.jpg"
+            alt="Jonathan's Photo"
+          /><span class="card-header__author"> Jonathan Walters</span>
+          <span class="card-header__verified">Verified Graduate</span>
         </div>
         <p class="card__text-description">
           The team was very supportive and kept me motivated
@@ -64,10 +71,14 @@
           investments I’ve made in myself. ”
         </blockquote>
       </div>
-      <div class="card card--white">
-        <div>
-          <img src="./images/image-jeanette.jpg" /><span> Jeanette Harmon</span>
-          <span>Verified Graduate</span>
+      <div class="card card--white card--third">
+        <div class="card-header">
+          <img
+            class="card-header__img card-header__img--boder-none"
+            src="./images/image-jeanette.jpg"
+            alt="Jeanette's Photo"
+          /><span class="card-header__author"> Jeanette Harmon</span>
+          <span class="card-header__verified">Verified Graduate</span>
         </div>
         <p class="card__text-description card__text-description--gray">
           An overall wonderful and rewarding experience
@@ -77,10 +88,14 @@
           enjoy, and make a good living while doing something I love. ”
         </blockquote>
       </div>
-      <div class="card card--blackish-blue">
-        <div>
-          <img src="./images/image-patrick.jpg" /><span> Patrick Abrams</span>
-          <span> Verified Graduate</span>
+      <div class="card card--blackish-blue card--fourth">
+        <div class="card-header">
+          <img
+            class="card-header__img card-header__img--boder-violet"
+            src="./images/image-patrick.jpg"
+            alt="Patrick's Photo"
+          /><span class="card-header__author"> Patrick Abrams</span>
+          <span class="card-header__verified"> Verified Graduate</span>
         </div>
         <p class="card__text-description">
           Awesome teaching support from TAs who did the bootcamp themselves.
@@ -96,10 +111,14 @@
           people. ”
         </blockquote>
       </div>
-      <div class="card card--white">
-        <div>
-          <img src="./images/image-kira.jpg" /><span> Kira Whittle</span>
-          <span> Verified Graduate</span>
+      <div class="card card--white card--fiveth">
+        <div class="card-header">
+          <img
+            class="card-header__img card-header__img--boder-none"
+            src="./images/image-kira.jpg"
+            alt="Kira's Photo"
+          /><span class="card-header__author"> Kira Whittle</span>
+          <span class="card-header__verified"> Verified Graduate</span>
         </div>
         <p class="card__text-description card__text-description--gray">
           Such a life-changing experience. Highly recommended!
