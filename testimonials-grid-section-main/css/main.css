@@ -15,8 +15,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1em;
+  min-height: 100vh;
   padding: 6em 2em;
   background-color: var(--Light-grayish-blue);
 }
@@ -39,6 +41,7 @@ blockquote {
   display: grid;
   grid-auto-columns: 25.4em;
   gap: 2em;
+  height: 100%;
 }
 
 .card {
