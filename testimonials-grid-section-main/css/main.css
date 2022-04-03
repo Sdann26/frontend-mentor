@@ -156,12 +156,13 @@ blockquote {
     grid-auto-flow: row dense;
     grid-auto-columns: auto;
     grid-template-columns: repeat(4, 20em);
-    grid-template-rows: 22em 20.5em;
+    grid-template-rows: 22;
     row-gap: 2.5em;
   }
 
   .card {
     margin-bottom: 0;
+    gap: 1.5em;
   }
 
   .card--first {
