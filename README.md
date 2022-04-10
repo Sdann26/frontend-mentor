@@ -25,6 +25,7 @@ En el presente repositorio desarrollo diversos retos propuesto de la página [Fr
   - [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
   - [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
   - [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
+  - [Landing Page Simple de Huddle](https://sdann26.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master)
 2. **Nivel Junior:**
   - [App Generadora de Consejos](https://sdann26.github.io/frontend-mentor/advice-generator-app-main)
   - [Sección de Testimonios en Grid](https://sdann26.github.io/frontend-mentor/testimonials-grid-section-main)

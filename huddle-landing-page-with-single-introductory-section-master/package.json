@@ -1,0 +1,42 @@
+{
+  "name": "huddle-landing-page-with-single-introductory-section-master",
+  "version": "1.0.0",
+  "description": "Frontendmentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sdann26/frontend-mentor.git"
+  },
+  "author": "Israel Danilo Blas Salas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sdann26/frontend-mentor/issues"
+  },
+  "homepage": "https://github.com/Sdann26/frontend-mentor#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+}
