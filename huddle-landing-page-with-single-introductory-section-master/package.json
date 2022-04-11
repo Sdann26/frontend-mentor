@@ -38,5 +38,6 @@
     "ios >= 7",
     "android >= 4",
     "bb >= 10"
-  ]
+  ],
+  "dependencies": {}
 }

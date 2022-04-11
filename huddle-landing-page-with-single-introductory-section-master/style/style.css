@@ -435,17 +435,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-16 {
+  margin-bottom: 4rem;
+}
+.inline-block {
+  display: inline-block;
 }
 .flex {
   display: -webkit-box;
@@ -453,8 +459,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: -ms-flexbox;
   display: flex;
 }
+.grid {
+  display: grid;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .w-32 {
   width: 8rem;
+}
+.w-72 {
+  width: 18rem;
+}
+.w-\[300px\] {
+  width: 300px;
+}
+.w-8 {
+  width: 2rem;
+}
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .flex-col {
   -webkit-box-orient: vertical;
@@ -463,11 +491,20 @@ Ensure the default browser behavior of the `hidden` attribute.
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.place-items-center {
+  place-items: center;
+}
 .items-center {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .self-start {
   -webkit-align-self: flex-start;
@@ -477,6 +514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
+.border-2 {
+  border-width: 2px;
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -484,13 +527,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-8 {
   padding: 2rem;
 }
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -498,6 +541,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-semibold {
   font-weight: 600;
@@ -535,6 +582,13 @@ body {
   background-size: contain;
 }
 
+@media screen and (min-width: 400px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+  }
+}
+
 .fm-poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -545,7 +599,31 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: whitesmoke;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+@media (hover: hover) {
+  .attribution a:hover {
+    color: var(--Soft-Magenta);
+  }
+}
+
+@media (hover: none) {
+  .attribution a:active {
+    color: var(--Soft-Magenta);
+  }
+}
+
+.box-shadow {
+  -webkit-box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.4);
+          box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.4);
+}
+
+.hover\:border-\[\#ec59c6\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 89 198 / var(--tw-border-opacity));
 }
 
 .hover\:bg-Soft-Magenta:hover {
@@ -556,4 +634,55 @@ body {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#ec59c6\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 89 198 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+
+  .md\:my-32 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }

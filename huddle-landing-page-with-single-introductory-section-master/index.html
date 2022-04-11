@@ -18,32 +18,72 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style/style.css" />
 
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
   </head>
-  <body class="p-8">
+  <body class="flex flex-col gap-6 p-8 md:p-12">
     <main class="flex flex-col items-center text-center text-white">
-      <img class="self-start w-32" src="./images/logo.svg" alt="logo" />
-      <img class="my-16" src="./images/illustration-mockups.svg" alt="" />
-      <h1 class="text-2xl font-semibold fm-poppins">
-        Build The Community Your Fans Will Love
-      </h1>
-      <p class="my-6">
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you engage
-        in genuine discussion.
-      </p>
-      <a
-        class="px-16 py-2 transition-colors bg-white hover:bg-Soft-Magenta rounded-3xl text-Violet hover:text-white"
-        href="#"
-        >Register</a
+      <img class="self-start w-32 md:w-40" src="./images/logo.svg" alt="logo" />
+      <section
+        class="flex flex-col items-center mb-16 md:gap-10 md:flex-row md:text-left"
       >
+        <img
+          class="my-14 w-72"
+          src="./images/illustration-mockups.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="md:my-32">
+          <h1 class="text-2xl font-semibold w-72 fm-poppins">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="my-6 mx-auto md:mx-0 w-[300px] md:w-auto">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a
+            class="inline-block px-20 py-3 text-sm transition-colors bg-white box-shadow md:text-base hover:bg-Soft-Magenta rounded-3xl text-Violet hover:text-white"
+            href="#"
+            >Register</a
+          >
+        </div>
+      </section>
+      <ul class="flex flex-row gap-4">
+        <li>
+          <a
+            class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
+            href="#"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
+            href="#"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
+            href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </main>
-    <footer class="">
+    <footer class="text-white">
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
