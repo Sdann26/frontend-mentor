@@ -561,6 +561,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-semibold {
   font-weight: 600;
 }
+.leading-9 {
+  line-height: 2.25rem;
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -629,8 +632,8 @@ body {
 }
 
 .box-shadow {
-  -webkit-box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.4);
-          box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.7);
+          box-shadow: 7px 7px 12px -8px rgba(0, 0, 0, 0.7);
 }
 
 .hover\:border-\[\#ec59c6\]:hover {
@@ -654,10 +657,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
-  .md\:-top-4 {
-    top: -1rem;
-  }
 
   .md\:mx-auto {
     margin-left: auto;
@@ -690,12 +689,16 @@ body {
     width: 100%;
   }
 
-  .md\:w-\[470px\] {
-    width: 470px;
+  .md\:w-\[460px\] {
+    width: 460px;
   }
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
   }
 
   .md\:max-w-2xl {
@@ -741,5 +744,20 @@ body {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:leading-10 {
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:-top-6 {
+    top: -1.5rem;
+  }
+
+  .xl\:leading-\[3\.2rem\] {
+    line-height: 3.2rem;
   }
 }
