@@ -435,6 +435,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.relative {
+  position: relative;
+}
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -449,6 +452,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-16 {
   margin-bottom: 4rem;
+}
+.block {
+  display: block;
 }
 .inline-block {
   display: inline-block;
@@ -468,6 +474,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-32 {
   width: 8rem;
 }
+.w-full {
+  width: 100%;
+}
 .w-72 {
   width: 18rem;
 }
@@ -476,6 +485,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-8 {
   width: 2rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
 }
 .flex-row {
   -webkit-box-orient: horizontal;
@@ -582,10 +594,10 @@ body {
   background-size: contain;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
   body {
     background-image: url(../images/bg-desktop.svg);
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -643,9 +655,13 @@ body {
 
 @media (min-width: 768px) {
 
-  .md\:my-32 {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+  .md\:-top-4 {
+    top: -1rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:mx-0 {
@@ -653,12 +669,37 @@ body {
     margin-right: 0px;
   }
 
-  .md\:w-40 {
-    width: 10rem;
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:box-content {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-\[470px\] {
+    width: 470px;
   }
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .md\:flex-row {
@@ -673,12 +714,28 @@ body {
     gap: 2.5rem;
   }
 
+  .md\:self-end {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+  }
+
   .md\:p-12 {
     padding: 3rem;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-base {

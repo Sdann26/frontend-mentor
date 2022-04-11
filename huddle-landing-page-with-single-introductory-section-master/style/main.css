@@ -16,10 +16,10 @@ body {
   background-size: contain;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
   body {
     background-image: url(../images/bg-desktop.svg);
-    background-size: contain;
+    background-size: cover;
   }
 }
 

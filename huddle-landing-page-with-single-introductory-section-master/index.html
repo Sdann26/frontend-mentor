@@ -32,19 +32,25 @@
     </title>
   </head>
   <body class="flex flex-col gap-6 p-8 md:p-12">
-    <main class="flex flex-col items-center text-center text-white">
-      <img class="self-start w-32 md:w-40" src="./images/logo.svg" alt="logo" />
+    <main
+      class="flex flex-col items-center text-center text-white max-w-7xl md:mx-auto"
+    >
+      <img class="self-start w-32 md:w-48" src="./images/logo.svg" alt="logo" />
       <section
-        class="flex flex-col items-center mb-16 md:gap-10 md:flex-row md:text-left"
+        class="flex flex-col items-center w-full mb-16 md:mb-0 md:gap-10 md:flex-row md:text-left"
       >
         <img
-          class="my-14 w-72"
+          class="my-14 md:mb-6 w-72 md:w-full md:max-w-2xl"
           src="./images/illustration-mockups.svg"
           alt=""
           aria-hidden="true"
         />
-        <div class="md:my-32">
-          <h1 class="text-2xl font-semibold w-72 fm-poppins">
+        <div
+          class="relative md:-top-4 block md:box-content md:mb-6 md:w-[470px]"
+        >
+          <h1
+            class="text-2xl font-semibold md:text-4xl w-72 md:w-full fm-poppins"
+          >
             Build The Community Your Fans Will Love
           </h1>
           <p class="my-6 mx-auto md:mx-0 w-[300px] md:w-auto">
@@ -53,17 +59,18 @@
             engage in genuine discussion.
           </p>
           <a
-            class="inline-block px-20 py-3 text-sm transition-colors bg-white box-shadow md:text-base hover:bg-Soft-Magenta rounded-3xl text-Violet hover:text-white"
+            class="inline-block px-20 py-3 text-sm transition-colors bg-white md:px-14 box-shadow md:text-base hover:bg-Soft-Magenta rounded-3xl text-Violet hover:text-white"
             href="#"
             >Register</a
           >
         </div>
       </section>
-      <ul class="flex flex-row gap-4">
+      <ul class="flex flex-row gap-4 md:self-end">
         <li>
           <a
             class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
             href="#"
+            aria-label="Link to facebook"
             ><i class="fa-brands fa-facebook-f"></i
           ></a>
         </li>
@@ -71,6 +78,7 @@
           <a
             class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
             href="#"
+            aria-label="Link to twitter"
             ><i class="fa-brands fa-twitter"></i
           ></a>
         </li>
@@ -78,6 +86,7 @@
           <a
             class="grid w-8 transition-colors border-2 rounded-full place-items-center aspect-square hover:text-[#ec59c6] hover:border-[#ec59c6]"
             href="#"
+            aria-label="Link to instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </li>
