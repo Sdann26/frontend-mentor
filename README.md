@@ -24,7 +24,7 @@ En el presente repositorio desarrollo diversos retos propuesto de la página [Fr
   - [Sección Social Proof](https://sdann26.github.io/frontend-mentor/social-proof-section-master/)
   - [Vista Previa de Articulo](https://sdann26.github.io/frontend-mentor/article-preview-component-master)
   - [Sección de Características en 4 Tarjetas](https://sdann26.github.io/frontend-mentor/four-card-feature-section-master)
-  - [Portada próximamente de Base Apparel](https://sdann26.github.io/frontend-mentor/base-apparel-coming-soon-master)
+  - [Próximamente portada de Base Apparel](https://sdann26.github.io/frontend-mentor/base-apparel-coming-soon-master)
   - [Suscripción de Pago](https://sdann26.github.io/frontend-mentor/single-price-grid-component-master)
   - [Landing Page Simple de Huddle](https://sdann26.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master)
 2. **Nivel Junior:**
