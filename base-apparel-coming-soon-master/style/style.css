@@ -99,8 +99,8 @@ img {
   border-radius: 2em;
 }
 
-.form__input::-webkit-input-placeholder {
-  color: rgba(206, 151, 151, 0.5);
+.form__input--error {
+  border-color: var(--Soft-Red);
 }
 
 .form__input::-moz-placeholder {
@@ -111,10 +111,6 @@ img {
   color: rgba(206, 151, 151, 0.5);
 }
 
-.form__input::-ms-input-placeholder {
-  color: rgba(206, 151, 151, 0.5);
-}
-
 .form__input::placeholder {
   color: rgba(206, 151, 151, 0.5);
 }
@@ -122,6 +118,10 @@ img {
 .form__input:focus {
   outline: none;
   border: 2px solid rgba(206, 151, 151, 1);
+}
+
+.form__input--error:focus {
+  border-color: var(--Soft-Red);
 }
 
 .form__button {
@@ -140,6 +140,27 @@ img {
   transition: all 100ms;
 }
 
+.form__error {
+  display: none;
+  position: absolute;
+  left: 1.5em;
+  bottom: -2em;
+  color: var(--Soft-Red);
+}
+
+.form__error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 5em;
+  transform: translateY(-50%);
+}
+
+.form__error--visible,
+.form__error-icon--visible {
+  display: block;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -155,8 +176,7 @@ img {
     color: var(--Soft-Red);
   }
   .form__button:hover {
-    -webkit-filter: brightness(1.25);
-            filter: brightness(1.25);
+    filter: brightness(1.25);
     box-shadow: 0px 5px 12px 4px hsla(0, 36%, 40%, 0.35);
   }
 }
@@ -173,16 +193,13 @@ img {
   }
 
   .main {
-    display: -ms-flexbox;
     display: flex;
     overflow-x: hidden;
   }
 
   .main__content {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,8 +211,7 @@ img {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -217,12 +233,9 @@ img {
   }
 
   .main-section {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     height: calc(100% - 97px);
   }
 
@@ -249,5 +262,9 @@ img {
 
   .form__button {
     width: 6em;
+  }
+
+  .form__error-icon {
+    right: 7em;
   }
 }

@@ -97,6 +97,10 @@ img {
   border-radius: 2em;
 }
 
+.form__input--error {
+  border-color: var(--Soft-Red);
+}
+
 .form__input::placeholder {
   color: rgba(206, 151, 151, 0.5);
 }
@@ -104,6 +108,10 @@ img {
 .form__input:focus {
   outline: none;
   border: 2px solid rgba(206, 151, 151, 1);
+}
+
+.form__input--error:focus {
+  border-color: var(--Soft-Red);
 }
 
 .form__button {
@@ -120,6 +128,27 @@ img {
   box-shadow: 0px 5px 12px 4px rgba(206, 151, 151, 0.35);
   cursor: pointer;
   transition: all 100ms;
+}
+
+.form__error {
+  display: none;
+  position: absolute;
+  left: 1.5em;
+  bottom: -2em;
+  color: var(--Soft-Red);
+}
+
+.form__error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 5em;
+  transform: translateY(-50%);
+}
+
+.form__error--visible,
+.form__error-icon--visible {
+  display: block;
 }
 
 .attribution {
@@ -220,5 +249,9 @@ img {
 
   .form__button {
     width: 6em;
+  }
+
+  .form__error-icon {
+    right: 7em;
   }
 }
