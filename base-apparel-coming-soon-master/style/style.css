@@ -93,10 +93,12 @@ img {
   box-sizing: border-box;
   width: 100%;
   padding: 1em 1.5em;
+  font-size: 0.9rem;
   background-color: transparent;
   color: var(--Dark-Grayish-Red);
   border: 2px solid rgba(206, 151, 151, 0.5);
   border-radius: 2em;
+  transition: all 250ms;
 }
 
 .form__input--error {
@@ -141,24 +143,30 @@ img {
 }
 
 .form__error {
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 1.5em;
   bottom: -2em;
   color: var(--Soft-Red);
+  opacity: 0;
+  font-size: 0.85rem;
+  transition: all 200ms;
 }
 
 .form__error-icon {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   right: 5em;
   transform: translateY(-50%);
+  opacity: 0;
+  transition: all 200ms;
 }
 
 .form__error--visible,
 .form__error-icon--visible {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .attribution {
@@ -258,6 +266,10 @@ img {
 
   .form {
     margin: 2.5em 0;
+  }
+
+  .form__input {
+    font-size: 1rem;
   }
 
   .form__button {
