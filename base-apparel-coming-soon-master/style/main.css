@@ -52,9 +52,6 @@ img {
 .img-section {
   height: 15.75em;
   width: 100%;
-  background-image: url("../images/hero-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-section {
