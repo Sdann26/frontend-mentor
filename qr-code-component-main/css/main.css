@@ -485,6 +485,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
+.w-\[300PX\] {
+  width: 300PX;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -545,6 +557,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.font-outfit {
+  font-family: Outfit, 'sans-serif';
+}
+
+.font-\[\'Outfit\'\] {
+  font-family: 'Outfit';
+}
+
+.font-\[\'outfit\'\] {
+  font-family: 'outfit';
+}
+
+.font-\[outfit\] {
+  font-family: outfit;
+}
+
+.font-\[\'outfit\'\2c \'sans-serif\'\] {
+  font-family: 'outfit','sans-serif';
+}
+
+.font-\[\'outfit_sans-serif\'\] {
+  font-family: 'outfit sans-serif';
+}
+
+.font-\[\'outfit\'_\'sans-serif\'\] {
+  font-family: 'outfit' 'sans-serif';
+}
+
+.font-\[outfit_\'sans-serif\'\] {
+  font-family: outfit 'sans-serif';
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -583,14 +627,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-:root{
-  --typography: 'Outfit', sans-serif;
-}
-
-.font-family-body{
-  font-family: var(--typography);
 }
 
 .hover\:text-Grayish-blue:hover {

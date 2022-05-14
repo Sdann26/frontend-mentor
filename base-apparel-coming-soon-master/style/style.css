@@ -54,6 +54,8 @@ img {
 .img-section {
   height: 15.75em;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-section {
