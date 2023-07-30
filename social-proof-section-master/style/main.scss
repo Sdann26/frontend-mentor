@@ -155,6 +155,7 @@ main {
     line-height: 2em;
     color: var(--Dark-Grayish-Magenta);
 }
+
 .attribution a {
     color: var(--Very-Dark-Magenta);
 }
@@ -166,6 +167,13 @@ main {
 }
 
 @media screen and (max-width: 1420px){
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px auto;
+        padding: 0em;
+    }
+    
     .cards{
         flex-direction: column;
         .card{
@@ -190,9 +198,6 @@ main {
 }
 
 @media screen and (max-width: 1200px){
-    main{
-        padding: 0em;
-    }
     .principal{
         .title{
             padding-right: 2em;
