@@ -1,0 +1,26 @@
+{
+  "name": "ping-coming-soon-page-master",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challengue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sdann26/frontend-mentor.git#main"
+  },
+  "author": "Danilo Blas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sdann26/frontend-mentor/issues"
+  },
+  "homepage": "https://github.com/Sdann26/frontend-mentor/tree/main#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
