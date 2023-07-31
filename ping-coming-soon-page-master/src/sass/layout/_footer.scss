@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  
+  a {
+    display: grid;
+    place-content: center;
+    padding: 0.5em;
+    transition: all 250ms;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+
+    svg path {
+      fill: var(--primary-color);
+      transition: all 250ms;
+    }
+
+    &:hover svg path {
+      fill: #FFF;
+    }
+  }
+}

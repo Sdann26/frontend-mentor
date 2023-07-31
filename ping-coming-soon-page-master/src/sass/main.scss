@@ -2,3 +2,9 @@
 
 @use './base/normalize';
 @use './base/typography';
+
+@use './layout/footer';
+
+@use './components/form';
+
+@use './page/home';
